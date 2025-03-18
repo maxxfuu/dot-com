@@ -191,6 +191,10 @@ nav {
     background: var(--accent-color);
 }
 
+.contact h2 {
+    margin-bottom: 2rem;
+}
+
 /* New/Modified Contact Styles */
 .contact-wrapper {
     display: grid;
@@ -265,4 +269,15 @@ nav {
 
 .contact-form button:hover {
     background: lightslategray;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--accent-color);
+
+}
+
+footer p {
+    color: var(--text-color);
 }
