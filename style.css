@@ -258,6 +258,10 @@ nav {
     transition: var(--transition);
 }
 
+.contact-form button:hover {
+    background: lightslategray;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .contact-wrapper {
@@ -271,8 +275,24 @@ nav {
     }
 }
 
-.contact-form button:hover {
-    background: lightslategray;
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Navigation */
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
 }
 
 footer {
