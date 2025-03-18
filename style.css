@@ -110,6 +110,10 @@ nav {
    padding: 6rem 10%; 
 }
 
+.experience h2 {
+    margin-bottom: 2rem;
+}
+
 .experience-card, .project-card {
     background: white;
     border-radius: 20px;
