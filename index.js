@@ -7,20 +7,38 @@ document.addEventListener('DOMContentLoaded', () => {
         element.textContent = '';
         element.style.display = 'block';
         
-        const typingAnimation = element.animate(
-            [
-                { width: '0%' },
-                { width: '100%' }
-            ],
-            {
-                duration: isMobile ? 300 : 600, // Faster on mobile
-                easing: 'steps(40, end)',
-                fill: 'forwards'
-            }
-        );
-
-        element.textContent = text;
-        return typingAnimation.finished;
+        if (isMobile) {
+            // On mobile, just fade in the text without typing animation
+            element.textContent = text;
+            element.animate(
+                [
+                    { opacity: 0, transform: 'translateY(10px)' },
+                    { opacity: 1, transform: 'translateY(0)' }
+                ],
+                {
+                    duration: 300,
+                    easing: 'ease-out',
+                    fill: 'forwards'
+                }
+            );
+        } else {
+            // On desktop, keep the typing animation
+            const typingAnimation = element.animate(
+                [
+                    { width: '0%' },
+                    { width: '100%' }
+                ],
+                {
+                    duration: 600,
+                    easing: 'steps(40, end)',
+                    fill: 'forwards'
+                }
+            );
+            element.textContent = text;
+            return typingAnimation.finished;
+        }
+        
+        return new Promise(resolve => setTimeout(resolve, 300));
     }
 
     async function animateElements() {
