@@ -77,9 +77,7 @@ nav {
     opacity: 1;
     visibility: visible;
     width: auto;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+    white-space: nowrap;
     overflow: hidden;
     display: none;
 }
@@ -105,6 +103,8 @@ nav {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
+
 
 .experience, .projects {
    padding: 6rem 10%; 
@@ -273,114 +273,24 @@ nav {
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
 
+@media (max-width: 480px) {
     /* Hero Section */
-    .hero {
-        padding: 0 5%;
-        margin-top: 6rem;
-    }
-
-    .hero h3 {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
     .hero h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
+        font-size: 1.8rem;
     }
 
     .hero p {
         font-size: 0.9rem;
     }
 
-    /* Experience Section */
-    .experience {
-        padding: 4rem 5%;
-    }
-
-    .stats {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .experience-card {
-        padding: 1.5rem;
-    }
-
-    .experience-card h3 {
-        font-size: 1.2rem;
-    }
-
-    .experience-card h4 {
-        font-size: 1rem;
-    }
-
-    .stat p {
-        font-size: 0.9rem;
-    }
-
-    /* About Section */
-    .about {
-        padding: 4rem 5%;
-    }
-
-    .about p {
-        font-size: 0.9rem;
-    }
-
-    /* Contact Section */
-    .contact {
-        padding: 4rem 5%;
-    }
-
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info-item {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
     /* Navigation */
-    nav {
-        padding: 1rem 5%;
-    }
-
     .nav-links {
-        gap: 0.8rem;
+        gap: 1rem;
     }
 
     .nav-links a {
-        font-size: 0.8rem;
-    }
-
-    /* Hero Section */
-    .hero h3 {
-        font-size: 0.9rem;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    /* Experience Cards */
-    .experience-card {
-        padding: 1.2rem;
-    }
-
-    /* Buttons */
-    .btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    /* Form Elements */
-    .contact-form input,
-    .contact-form textarea {
-        padding: 0.8rem;
         font-size: 0.9rem;
     }
 }
