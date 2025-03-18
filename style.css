@@ -1,85 +1,268 @@
+@font-face {
+    font-family: 'Berkeley Mono';
+    src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2'),
+         url('/fonts/BerkeleyMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Berkeley Mono';
+    src: url('/fonts/BerkeleyMono-Bold.woff2') format('woff2'),
+         url('/fonts/BerkeleyMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
-    --width: 720px;
-    --font-main: 'Berkeley Mono', monospace;
-    --font-secondary: 'Lucida Console', monospace;
-    --font-scale: 1em; /* Standard font size */
-    --background-color: #000000; /* Black background */
-    --heading-color: #FFFFFF; /* White headings */
-    --text-color: #FFFFFF; /* White text */
-    --link-color: #FFFFFF; /* White links */
-    --visited-color: #CCCCCC; /* Light gray for visited links */
-    --main-color: #FFFFFF; /* White for main elements */
-    --code-background-color: #333333; /* Dark gray for code blocks */
-    --code-color: #FFFFFF; /* White text in code blocks */
-    --blockquote-color: #CCCCCC; /* Light gray for blockquotes */
+    --primary-color: #333333;
+    --secondary-color: #2d2d2d;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #f0f0f0;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Berkeley Mono', Consolas, monospace;
 }
 
 body {
-    font-family: var(--font-main);
-    font-size: var(--font-scale);
-    margin: auto;
-    padding: 20px;
-    max-width: var(--width);
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--heading-color);
+/* Navigation */
+nav {
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    margin-top: 4rem;
+}
+
+/* Typewriter Effect Styles */
+.hero h1, .hero h2, .hero p, .hero h3 {
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #2d2d2d;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    border-bottom: 1px solid var(--link-color);
-    transition: color 0.3s, border-color 0.3s;
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-a:hover {
-    color: var(--visited-color);
-    border-color: var(--visited-color);
+
+
+.experience, .projects {
+   padding: 6rem 10%; 
 }
 
-code {
-    font-family: 'Lucida Console', monospace;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    padding: 2px 4px;
-    border-radius: 3px;
+.experience-card, .project-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
 
-blockquote {
-    border-left: 2px solid var(--blockquote-color);
-    color: var(--blockquote-color);
-    padding-left: 1rem;
-    margin-left: 0;
-    font-style: italic;
+.experience-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.stats {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.stat {
+    text-align: left;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 10%;
+    background-color: white;
+}
+
+.cta-buttons {
     display: flex;
     gap: 1rem;
-}
-
-nav a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: 1rem; /* Adjust font size for readability */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Simple hover effect */
-}
-
-footer {
     margin-top: 2rem;
-    border-top: 1px solid var(--blockquote-color);
-    padding-top: 1rem;
-    text-align: center;
-    font-size: 0.9em;
-    color: var(--blockquote-color);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:first-child {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn:last-child {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact */
+.contact {
+    padding: 5rem 10%;
+    background: var(--accent-color);
+}
+
+/* New/Modified Contact Styles */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-info-item h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: white;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.contact-form button:hover {
+    background: lightslategray;
 }

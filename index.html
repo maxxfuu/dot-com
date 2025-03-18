@@ -7,44 +7,118 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <!-- Header Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="https://www.linkedin.com/in/maxxfuu/">LinkedIn</a>
+            <a href="https://github.com/maxxfuu">GithHub</a>
+            <a href="">Resumé</a>
+        </div>
+    </nav>
 
-    <header>
-        <h1 class="no-style"><a href="../index.html">max</a></h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="../about.html">about</a></li>
-                <li><a href="blog/index.html">blog</a></li>
-                <li><a href="../resources.html">resources</a></li>
-                <li><a href="../contact.html">contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <h3>EXPLORING THE LIMITS OF MEMORY EFFICIENT AND LOW-LATENCY SOFTWARE.</h3>
+        <h1>Hey, I'm Max</h1>
+        <p>I love writing efficient software in c/c++. Learning full-stack on the side.</p>
     </header>
 
-    <div class="divider"></div>
-    
-    <main>
-        <p>
-            <strong>build what excites.</strong>
-        </p>
+    <section class="experience">
+        <h2>Work Experience</h2>
+        <!-- experience card 1 -->        
+        <div class="experience-card">   
+            <h3>Undergraduate Teaching Assistant</h3>
+            <h4>University of California, Merced</h4>
+            <p class="date">Aug. 2024 - Dec. 2024</p>
+            <p>EE021 - Electrical Engineering with Python - (Prof. Ayush Pandey)</p>
+            <div class="stats">
+                <div class="stat">
+                    <p>Facilitate lectures for 150 students by demonstrating Python and ARM Assembly on open-circuit programming.</p>
+                </div>
+                <div class="stat">
+                    <p>Lectured for 65+ hours over 15+ weeks by addressing questions related to circuit design and programming.</p>
+                </div>
+                <div class="stat">
+                    <p>Enhanced student engagement by creating an interactive coding exercises, increasing lab participation by 20%.</p>
+                </div>
+            </div>
+        </div> 
+ 
+        <!-- experience card 2 -->        
+        <div class="experience-card">   
+            <h3>Undergraduate Research Assistant</h3>
+            <h4>University of California, Merced</h4>
+            <p class="date">Oct. 2023 - Oct. 2024</p>
+            <p>Created a LLM-Based Autograder that enables subjective grading and immediate feedback.</p>
+            <div class="stats">
+                <div class="stat">
+                    <p>Autograder improved 300 students grades by 15% for EE021 & ME021 course by providing detailed grading and feedback.</p>
+                </div>
+                <div class="stat">
+                    <p>15% less compute within the each epoch when fine-tuning by implementing LoRA on LLM-based Autograder.</p>
+                </div>
+                <div>
+                    <p>Increasing the efficiency by 50% when fine-tuning the Autograder through creating a CSV & JSON data pipeline.</p>
+                </div>
+            </div>
+        </div> 
+ 
+        <!-- experience card 3-->
+        <div class="experience-card">   
+            <h3>ACM SIG-AI Lead</h3>
+            <h4>University of California, Merced</h4>
+            <p class="date">Aug. 2023 - May. 2024</p>
+            <div class="stats">
+                <div class="stat">
+                    <p>Taught over 50+ students out of 200 active members by organizing bi-weekly workshops on Deep Learning.</p>
+                </div>
+                <div class="stat">
+                    <p>Machine Learning workshops including creating Multivariate Linear for Regression, and SVM for Classification.</p>
+                </div>
+                <div class="stat">
+                    <p>Deep Learning workshops on creating Multi-Layer Perceptions, Transformers, and LLM from scratch.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
 
-        
-        <p>Let's chat! I am interested in:</p>
-        <ul class="interests">
-            <li>Systems Programming</li>
-            <li>Compiler Engineering</li>
-            <li>Research with LLM</li>
-        </ul>
+    <!-- About Section -->
+    <section class="about">
+        <p>A BIT ABOUT ME</p>
+        <h2>WHO I AM</h2>
+        <p>At heart, I am a software engineer that loves C++, crazy, I know. I love learning about its language features and I love writing modern C++. Apart from writing software, I love reading, cook, hitting the gym, and traveling</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="btn">Get in Touch</a>
+            <a href="/cv" class="btn">Download CV</a>
+        </div>
+    </section>
 
-        <p>Currentlying building my own mini compiler and more...</p>
-    </main>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <h3>Email</h3>
+                    <p>maxfu826@gmail.com</p>
+                </div>
+                <div class="contact-info-item">
+                    <h3>Location</h3>
+                    <p>Irvine, CA</p>
+                </div>
+            </div>
     
-    <div class="divider"></div>
-    
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2025 maxxfuu</p>
-    </footer>
-
+        <p>© 2025 Max Fu. All rights reserved.</p>
+    </footer>    
     <script src="index.js"></script>
 </body>
 </html>
