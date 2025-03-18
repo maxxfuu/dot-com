@@ -264,14 +264,69 @@ nav {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    nav {
+        padding: 1rem 5%;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 0 5%;
+        margin-top: 4rem;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h3 {
+        font-size: 1rem;
+    }
+    
+    /* Experience Cards */
+    .experience {
+        padding: 4rem 5%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    /* About Section */
+    .about {
+        padding: 4rem 5%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 4rem 5%;
+    }
+
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .contact-info {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-form textarea {
+        min-height: 150px;
     }
 }
 
