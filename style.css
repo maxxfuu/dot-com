@@ -117,7 +117,7 @@ nav {
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 4rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.1);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -395,7 +395,9 @@ nav {
     .nav-links a {
         font-size: 0.9rem;
     }
+
 }
+
 
 footer {
     text-align: center;
