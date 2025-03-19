@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { width: '100%' }
             ],
             {
-                duration: 600, // Super fast - just 300ms per element
+                duration: 550,
                 easing: 'steps(40, end)',
                 fill: 'forwards'
             }
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function animateElements() {
         for (const element of heroElements) {
             await typeText(element);
-            await new Promise(resolve => setTimeout(resolve, 100)); // Small delay between elements
+            await new Promise(resolve => setTimeout(resolve, 75)); // Small delay between elements
         }
     }
 
