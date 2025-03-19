@@ -154,12 +154,7 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.experience-card:hover, .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.stats {
+.experience-card:hs {
     display: flex;
     gap: 2rem;
     margin: 1.5rem 0;
@@ -201,9 +196,18 @@ nav {
     color: white;
 }
 
+.btn:first-child:hover {
+    background: lightslategray;
+}
+
 .btn:last-child {
     background: var(--accent-color);
     color: var(--text-color);
+}
+
+.btn:last-child:hover {
+    color: white;
+    background: var(--primary-color)
 }
 
 /* Animations */
@@ -442,6 +446,11 @@ footer p {
 }
 
 .date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.abstract {
     color: #666;
     font-size: 0.9rem;
 }
