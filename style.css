@@ -49,6 +49,7 @@ nav {
     z-index: 1000;
 }
 
+
 .nav-links {
     display: flex;
     justify-content: flex-end;
@@ -121,7 +122,24 @@ nav {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+
+    /* Project and Experince Card Pop-Up */
+    transform: scale(1);
+    transform: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Highlighting */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    isolation: isolate;
 }
+
+.experience-card:hover, .project-card:hover{
+    transform: scale(1.02); /* Slightly larger */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Bring to front when enlarged */
+}
+
 
 /* Add these new styles */
 .video-container {
