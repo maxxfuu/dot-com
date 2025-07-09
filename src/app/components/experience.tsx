@@ -54,7 +54,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className="py-4 px-2 sm:px-4">
+    <div className="py-4 px-4 sm:px-4">
       <h2 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">experience</h2>
       
       <Accordion type="multiple" className="w-full">

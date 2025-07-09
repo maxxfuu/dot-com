@@ -62,7 +62,7 @@ export default function Hero() {
   return(
     <div className="flex flex-col md:flex-row justify-between items-center py-8 sm:py-12 md:py-16 gap-6 sm:gap-8">
       {/* left side */}
-      <div className="flex flex-col px-2 sm:px-4 max-w-full sm:max-w-md">
+      <div className="flex flex-col px-4 sm:px-4 max-w-full sm:max-w-md">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Max Fu</h1>
         <h2 className="text-sm sm:text-base md:text-lg flex flex-col sm:inline-flex sm:flex-row sm:items-center mb-3 sm:mb-4">
           <span>CSE Student @ UC Merced</span>
@@ -89,7 +89,7 @@ export default function Hero() {
           height={400}
           priority={true}
           draggable={false}
-          className="w-32 h- sm:w-[250px] sm:h-[250px] object-cover rounded-sm border-2 sm:border-4 border-gray-500"/>
+          className="w-48 h-48 sm:w-[250px] sm:h-[250px] object-cover rounded-sm border-2 sm:border-4 border-gray-500"/>
       </div>
     </div>
   );

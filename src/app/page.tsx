@@ -5,7 +5,7 @@ import Projects from "./components/projects"
 
 export default function Home() {
   return (
-    <div className="max-w-4xl px-12 mx-auto">
+    <div className="w-full sm:max-w-4xl sm:mx-auto md:px-12">
       <Navbar/>
       <Hero/>
       <Experience/>
