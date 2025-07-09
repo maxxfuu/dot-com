@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +14,7 @@ const experiences = [
     image: "/machyna.png",
     company: "Machyna Inc.",
     position: "Software Engineer Intern",
-    description: "Built responsive web applications using React and TypeScript. Collaborated with senior developers to implement new features and improve user experience. Gained experience with modern development workflows and version control.",
+    description: "I built an additional feature within AWS cloud infrastructure for the company that enabled a full lifecycle of uploading and managing files within the cloud infrastrucutre. Cloud services that was used includes but not limited to AppSync, S3, Lambda, RDS, and other itermediate AWS services. I was also responsible for building a new landing page for the company using Next.js, Tailwind CSS, and TypeScript.",
     date: "Summer 2025"
   },
   {
@@ -20,31 +22,39 @@ const experiences = [
     image: "/algoverse.png",
     company: "Algoverse Org.",
     position: "Independent Researcher",
-    description: "Research on Mechanistic Interpretability of LLMs; Mitigating sycophancy behavior.",
-    date: "Spring 2025"
+    description: "Conducted research on mechanistic interpretability of LLMs by identifying hidden-state task vectors that drive sycophantic behaviors. Mitigating unwatned behavior via vector subtraction during generation.",
+    date: "Winter 2024"
   },
   {
     id: "item-3", 
     image: "/ucmerced.png",
     company: "University of California, Merced",
-    position: "Teaching Assistant",
-    description: "Assist students with programming concepts in Python, Java, and C++. Help debug code and explain complex algorithms. Improved communication skills while teaching data structures and object-oriented programming.",
-    date: "Winter 2024"
+    position: "EE021 Teaching Assistant",
+    description: "I facilated lectures and helped 150 students with Python, R, MIPs Assembly. I hosted office hours and mini-workshops; lectured over 65+ hours in 15 weeks addressed questions related to circuit design and programming.",
+    date: "Fall 2024"
   },
-
   {
     id: "item-4",
     image: "/ucmerced.png",
     company: "University of California, Merced",
     position: "Undergraduate Researcher",
-    description: "Developed multiple SaaS applications from concept to deployment. Built responsive frontends, RESTful APIs, and managed databases. Focused on creating innovative solutions for real-world problems.",
+    description: "Conducted research on the application of LLM-based grader. Research led to the development of a personalized grading system that allows subjective grading on open-ended summative assessments. This project was trained on real student data and the model with fine-tuned using LoRA.",
+    date: "Fall 2023"
+  },
+  {
+    id: "item-5",
+    image: "/acm.png",
+    company: "University of California, Merced",
+    position: "SIG AI Lead",
+    description: "Taught technical workshops on Deep Learning and Machine Learning to 50+ students out of 200 active members. Workshop topics includes Classical ML and Deep Dive into Transformers.",
     date: "Fall 2023"
   }
+  
 ];
 
 export default function Experience() {
   return (
-    <div className="py-4 px-4">
+    <div className="pb-4 px-4">
       <h2 className="text-lg font-semibold mb-4">experience</h2>
       
       <Accordion type="multiple" className="w-full">
@@ -67,7 +77,7 @@ export default function Experience() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4 mt-4">
+              <div className="space-y-4 mt-2">
                 <p className="text-[#9CA3AF] leading-relaxed">
                   {exp.description}
                 </p>

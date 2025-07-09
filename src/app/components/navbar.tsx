@@ -1,4 +1,4 @@
-import { FolderCode, PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
+import { PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -10,9 +10,8 @@ export default function Navbar() {
 
       {/* Right Nav */}
       <ul className="flex mr-4 space-x-6">
-        <li className="flex items-center text-sm gap-2 cursor-pointer"><SquareMousePointer size={16}/><a href="#">about</a></li>
-        <li className="flex items-center text-sm gap-2 cursor-pointer"><Sparkles size={16}/><a href="#">experience</a></li>
-        <li className="flex items-center text-sm gap-2 cursor-pointer"><FolderCode size={16}/><a href="#">projects</a></li>
+        <li className="flex items-center text-sm gap-2 cursor-pointer"><SquareMousePointer size={16}/><a href="#">home</a></li>
+        <li className="flex items-center text-sm gap-2 cursor-pointer"><Sparkles size={16}/><a href="#">gems</a></li>
         <li className="flex items-center text-sm gap-2 cursor-pointer"><PenLine size={16}/><a href="#">writing</a></li>
       </ul>
     </div>
