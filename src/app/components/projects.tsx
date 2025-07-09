@@ -142,7 +142,7 @@ export default function Projects() {
               />
               <div className="flex flex-row justify-between items-start">
                 <div className="flex-1">
-                  <h3 className="text-sm font-semibold group-hover:text-white transition-colors items-center">
+                  <h3 className="mb-2 text-sm font-semibold group-hover:text-white transition-colors items-center">
                     {project.name}
                     <span className="ml-3 text-xs font-normal tracking-tighter px-2 py-0.5 bg-[#535353] rounded-md">{project.type}</span>
                   </h3>
