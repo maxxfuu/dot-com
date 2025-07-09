@@ -34,35 +34,43 @@ export default function Projects() {
   ]
 
   return (
-    <div className="pt-4 pb-4 px-4">
-      <div className="text-sm flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold">projects</h2>
-        <a href="https://github.com/maxxfuu" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-          View more on GitHub <ChevronRight />
+    <div className="pt-4 pb-8 px-2 sm:px-4">
+      {/* Header section with responsive design */}
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 sm:mb-6 space-y-2 sm:space-y-0">
+        <h2 className="text-lg sm:text-xl font-semibold">projects</h2>
+        <a 
+          href="https://github.com/maxxfuu" 
+          className="inline-flex items-center gap-1 sm:gap-2 text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
+        >
+          <span className="hidden sm:inline">View more on</span>
+          <span className="sm:hidden">More on</span>
+          GitHub <ChevronRight className="w-4 h-4" />
         </a>
       </div>
       
-      {/* Grid container for all project cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Responsive grid container */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {projects.map((project) => (
           <a 
             key={project.id} 
             href={project.link}
-            className="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors group block"
+            className="bg-gray-800 p-3 sm:p-4 rounded-lg hover:bg-gray-700 transition-colors group block"
           >
-            <div className="flex flex-col space-y-3">
-              <Image 
+            <div className="flex flex-col space-y-2 sm:space-y-3">
+              <Image
+                priority={true}
+                draggable={false}
                 src={project.image} 
                 alt={project.name} 
-                width={200} 
-                height={120} 
-                className="w-full h-32 object-cover rounded-md"
+                width={2124} 
+                height={2124} 
+                className="w-full h-24 sm:h-32 object-cover rounded-md"
               />
               <div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors">
+                <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 group-hover:text-white transition-colors">
                   {project.name}
                 </h3>
-                <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
+                <p className="text-xs sm:text-sm text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed">
                   {project.description}
                 </p>
               </div>

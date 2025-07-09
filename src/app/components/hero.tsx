@@ -60,30 +60,37 @@ const socials = [
 
 export default function Hero() {
   return(
-    <div className="flex flex-row justify-between items-center my-16">
+    <div className="flex flex-col md:flex-row justify-between items-center py-8 sm:py-12 md:py-16 gap-6 sm:gap-8">
       {/* left side */}
-      <div className="flex flex-col mx-4 max-w-sm">
-        <h1 className="text-5xl font-semibold">Max Fu</h1>
-        <h2 className="text-lg inline-flex items-center">CSE Student @ UC Merced <span className="bg-[#101827] text-white-500 ml-4 rounded-md px-2 py-0.5">Sophomore</span></h2>
-        <p className="text-[#9CA3AF] my-2">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unqiue, and scaleable.</p>
-        <p className="text-[#9CA3AF]">If you&apos;d like to connect, feel free to reach out!</p>
-        <div className="flex flex-row gap-6 mt-4">
+      <div className="flex flex-col px-2 sm:px-4 max-w-full sm:max-w-md">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Max Fu</h1>
+        <h2 className="text-sm sm:text-base md:text-lg flex flex-col sm:inline-flex sm:flex-row sm:items-center mb-3 sm:mb-4">
+          <span>CSE Student @ UC Merced</span>
+          <span className="bg-[#101827] text-white-500 mt-2 sm:mt-0 sm:ml-4 rounded-md px-2 py-0.5 text-xs sm:text-sm self-start sm:self-auto">Sophomore</span>
+        </h2>
+        <p className="text-[#9CA3AF] mb-3 text-sm sm:text-base leading-relaxed">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unique, and scaleable.</p>
+        <p className="text-[#9CA3AF] mb-4 sm:mb-6 text-sm sm:text-base">If you&apos;d like to connect, feel free to reach out!</p>
+        <div className="flex flex-row gap-4 sm:gap-6 justify-start">
           {socials.map((social) => (
-             <a href={social.url} key={social.name} className="text-gray-400 hover:text-white transition-colors">
-               {social.icon}
+             <a href={social.url} key={social.name} className="text-gray-400 hover:text-white transition-colors p-1">
+               <div className="w-5 h-5 sm:w-6 sm:h-6">
+                 {social.icon}
+               </div>
              </a>
            ))}
         </div>
       </div>
 
-      <Image 
-        src="/profile.webp" 
-        alt="Max Fu" 
-        width={150} 
-        height={150}
-        priority={true}
-        draggable={false}
-        className="w-[250px] h-[250px] object-cover border-5 border-[#101727] mr-4"/>
+      <div className="">
+        <Image 
+          src="/profile.webp" 
+          alt="Max Fu" 
+          width={400} 
+          height={400}
+          priority={true}
+          draggable={false}
+          className="w-32 h- sm:w-[250px] sm:h-[250px] object-cover rounded-sm border-2 sm:border-4 border-gray-500"/>
+      </div>
     </div>
   );
 }
