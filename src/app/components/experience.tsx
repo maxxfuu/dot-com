@@ -28,7 +28,7 @@ const experiences = [
   {
     id: "item-3", 
     image: "/ucmerced.png",
-    company: "University of California, Merced",
+    company: "UC Merced",
     position: "EE021 Teaching Assistant",
     description: "I facilated lectures and helped 150 students with Python, R, MIPs Assembly. I hosted office hours and mini-workshops; lectured over 65+ hours in 15 weeks addressed questions related to circuit design and programming.",
     date: "Fall 2024"
@@ -36,7 +36,7 @@ const experiences = [
   {
     id: "item-4",
     image: "/ucmerced.png",
-    company: "University of California, Merced",
+    company: "UC Merced",
     position: "Undergraduate Researcher",
     description: "Conducted research on the application of LLM-based grader. Research led to the development of a personalized grading system that allows subjective grading on open-ended summative assessments. This project was trained on real student data and the model with fine-tuned using LoRA.",
     date: "Fall 2023"
@@ -44,7 +44,7 @@ const experiences = [
   {
     id: "item-5",
     image: "/acm.png",
-    company: "University of California, Merced",
+    company: "ACM @ UC Merced",
     position: "SIG AI Lead",
     description: "Taught technical workshops on Deep Learning and Machine Learning to 50+ students out of 200 active members. Workshop topics includes Classical ML and Deep Dive into Transformers.",
     date: "Fall 2023"
