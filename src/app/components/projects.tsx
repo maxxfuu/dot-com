@@ -54,7 +54,7 @@ export default function Projects() {
           <a 
             key={project.id} 
             href={project.link}
-            className="bg-gray-800 p-3 sm:p-4 rounded-lg hover:bg-gray-700 transition-colors group block"
+            className="bg-[#151315] p-3 sm:p-4 rounded-lg hover:bg-[#252325] transition-colors group block"
           >
             <div className="flex flex-col space-y-2 sm:space-y-3">
               <Image
