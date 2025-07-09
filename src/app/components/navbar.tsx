@@ -1,4 +1,4 @@
-import { FolderCode, PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
+import { PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
 
 export default function Navbar() {
   return (
