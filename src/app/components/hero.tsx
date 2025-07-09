@@ -65,8 +65,8 @@ export default function Hero() {
       <div className="flex flex-col mx-4 max-w-sm">
         <h1 className="text-5xl font-semibold">Max Fu</h1>
         <h2 className="text-lg inline-flex items-center">CSE Student @ UC Merced <span className="bg-[#101827] text-white-500 ml-4 rounded-md px-2 py-0.5">Sophomore</span></h2>
-        <p className="text-[#9CA3AF]">I'm a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unqiue, and scaleable.</p>
-        <p className="text-[#9CA3AF]">If you'd like to connect, feel free to reach out!</p>
+        <p className="text-[#9CA3AF]">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unqiue, and scaleable.</p>
+        <p className="text-[#9CA3AF]">If you&apos;d like to connect, feel free to reach out!</p>
         <div className="flex flex-row gap-6 mt-4">
           {socials.map((social) => (
              <a href={social.url} key={social.name} className="text-gray-400 hover:text-white transition-colors">
