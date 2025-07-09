@@ -2,7 +2,7 @@ import { FolderCode, PenLine, Sparkles, SquareMousePointer } from 'lucide-react'
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center pb-2 mt-8 mb-2 border-b-1 border-[#252525] text-[#9CA3AF] sticky top-0 bg-black">
+    <div className="flex justify-between items-center py-4 border-b-1 border-[#252525] text-[#9CA3AF] sticky top-0 bg-black z-50 min-h-[60px]">
       {/* Left Nav */}
       <div className="flex items-center ml-4">
         <p>maxxfuu</p>
