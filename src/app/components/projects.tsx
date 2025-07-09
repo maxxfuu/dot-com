@@ -34,7 +34,7 @@ export default function Projects() {
   ]
 
   return (
-    <div className="pt-4 pb-8 px-4 sm:px-4">
+    <div className="pt-4 pb-8 px-2 sm:px-4">
       {/* Header section with responsive design */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 sm:mb-6 space-y-2 sm:space-y-0">
         <h2 className="text-lg sm:text-xl font-semibold">projects</h2>
