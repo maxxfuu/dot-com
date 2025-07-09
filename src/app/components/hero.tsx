@@ -66,7 +66,7 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Max Fu</h1>
         <h2 className="text-sm sm:text-base md:text-lg flex flex-col sm:inline-flex sm:flex-row sm:items-center mb-3 sm:mb-4">
           <span>CSE Student @ UC Merced</span>
-          <span className="bg-[#101827] text-white-500 mt-2 sm:mt-0 sm:ml-4 rounded-md px-2 py-0.5 text-xs sm:text-sm self-start sm:self-auto">Sophomore</span>
+          <span className="bg-[#101827] text-white-500 mt-2 sm:mt-0 sm:ml-4 rounded-md px-2 py-0.5 text-xs sm:text-sm self-start sm:self-auto">Junior</span>
         </h2>
         <p className="text-[#9CA3AF] mb-3 text-sm sm:text-base leading-relaxed">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unique, and scaleable.</p>
         <p className="text-[#9CA3AF] mb-4 sm:mb-6 text-sm sm:text-base">If you&apos;d like to connect, feel free to reach out!</p>
