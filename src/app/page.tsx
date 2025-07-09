@@ -6,7 +6,7 @@ import Footer from "./components/footer"
 
 export default function Home() {
   return (
-    <div className="w-full sm:max-w-4xl sm:mx-auto md:px-12">
+    <div className="w-full sm:max-w-4xl sm:mx-auto md:px-12 select-none">
       <Navbar/>
       <Hero/>
       <Experience/>

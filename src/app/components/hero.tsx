@@ -81,7 +81,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <Image 
           src="/profile.webp" 
           alt="Max Fu" 
@@ -89,7 +89,7 @@ export default function Hero() {
           height={400}
           priority={true}
           draggable={false}
-          className="w-48 h-48 sm:w-[250px] sm:h-[250px] object-cover rounded-sm border-2 sm:border-4 border-[#151315]"/>
+          className="w-48 h-48 sm:w-[250px] sm:h-[250px] object-cover rounded-md border-2 sm:border-4 border-[#151315]"/>
       </div>
     </div>
   );
