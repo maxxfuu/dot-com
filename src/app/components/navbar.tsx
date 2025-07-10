@@ -12,15 +12,15 @@ export default function Navbar() {
       <ul className="flex px-4 space-x-4 sm:space-x-6">
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <SquareMousePointer size={18} className="sm:w-4 sm:h-4"/>
-          <a href="#" className="hidden sm:inline">about</a>
+          <a href="/" className="hidden sm:inline">home</a>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <Sparkles size={18} className="sm:w-4 sm:h-4"/>
-          <a href="#" className="hidden sm:inline">gems</a>
+          <a href="/gems" className="hidden sm:inline">gems</a>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <PenLine size={18} className="sm:w-4 sm:h-4"/>
-          <a href="#" className="hidden sm:inline">writing</a>
+          <a href="/writing" className="hidden sm:inline">writing</a>
         </li>
       </ul>
     </div>

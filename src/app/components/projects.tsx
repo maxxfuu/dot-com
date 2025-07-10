@@ -77,7 +77,7 @@ export default function Projects() {
       type: "CLI Tool",
       description: "Lightweight utility app that converts numbers between different data formats.",
       image: "/bcon.webp",
-      link: "https://project-2.com",
+      link: "https://github.com/maxxfuu/bcon",
       technologies: [
         { name: "c", component: cIcon },
         { name: "cmake", component: cmakeIcon },
