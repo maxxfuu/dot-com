@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
 
 export default function Navbar() {
@@ -12,15 +13,15 @@ export default function Navbar() {
       <ul className="flex px-4 space-x-4 sm:space-x-6">
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <SquareMousePointer size={18} className="sm:w-4 sm:h-4"/>
-          <a href="/" className="hidden sm:inline">home</a>
+          <Link href="/" className="hidden sm:inline">home</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <Sparkles size={18} className="sm:w-4 sm:h-4"/>
-          <a href="/gems" className="hidden sm:inline">gems</a>
+          <Link href="/gems" className="hidden sm:inline">gems</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <PenLine size={18} className="sm:w-4 sm:h-4"/>
-          <a href="/writing" className="hidden sm:inline">writing</a>
+          <Link href="/writing" className="hidden sm:inline">writing</Link>
         </li>
       </ul>
     </div>
