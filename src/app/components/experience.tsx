@@ -20,7 +20,7 @@ const experiences = [
   {
     id: "item-2",
     image: "/algoverse.png",
-    company: "Algoverse Org.",
+    company: "Algoverse",
     position: "Independent Researcher",
     description: "Conducted research on mechanistic interpretability of LLMs by identifying hidden-state task vectors that drive sycophantic behaviors. Mitigating unwatned behavior via vector subtraction during generation.",
     date: "Winter 2024"

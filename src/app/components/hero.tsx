@@ -68,7 +68,7 @@ export default function Hero() {
           <span>CSE Student @ UC Merced</span>
           <span className="bg-[#101827] text-white-500 mt-2 sm:mt-0 sm:ml-4 rounded-md px-2 py-0.5 text-xs sm:text-sm self-start sm:self-auto">Junior</span>
         </h2>
-        <p className="text-[#9CA3AF] mb-3 text-sm sm:text-base leading-relaxed">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unique, and scaleable.</p>
+        <p className="text-[#9CA3AF] mb-3 text-sm sm:text-base leading-relaxed">I&apos;m a full time student and an aspiring software engineer. I enjoy building SaaS Projects that are innovative, unique, and scalable.</p>
         <p className="text-[#9CA3AF] mb-4 sm:mb-6 text-sm sm:text-base">If you&apos;d like to connect, feel free to reach out!</p>
         <div className="flex flex-row gap-4 sm:gap-6 justify-start">
           {socials.map((social) => (

@@ -22,7 +22,7 @@ export default function Navbar() {
         : 'border-b border-[#252525] bg-transparent'
     }`}>
       {/* Left Nav */}
-      <div className="flex items-center px-4">
+      <div className="flex items-center px-4 cursor-pointer">
         <p className="text-base sm:text-base font-medium">maxxfuu</p>
       </div>
 
@@ -39,7 +39,7 @@ export default function Navbar() {
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <PenLine size={18} className="sm:w-4 sm:h-4"/>
           <Link href="/writing" className="hidden sm:inline">writing</Link>
-        </li>
+        </li> 
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
           <File size={18} className="sm:w-4 sm:h-4"/>
           <Link href="/resume.pdf" target="_blank" className="hidden sm:inline">resume</Link>
