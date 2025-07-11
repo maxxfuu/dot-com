@@ -23,7 +23,7 @@ export default function Navbar() {
     }`}>
       {/* Left Nav */}
       <div className="flex items-center px-4 cursor-pointer">
-        <p className="text-base sm:text-base font-medium">maxxfuu</p>
+        <Link href="/" className="text-base sm:text-base font-medium">maxxfuu</Link>
       </div>
 
       {/* Right Nav */}
@@ -36,11 +36,11 @@ export default function Navbar() {
           <Sparkles size={18} className="sm:w-4 sm:h-4"/>
           <Link href="/gems" className="hidden sm:inline">gems</Link>
         </li>
-        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
+        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
           <PenLine size={18} className="sm:w-4 sm:h-4"/>
           <Link href="/writing" className="hidden sm:inline">writing</Link>
-        </li> 
-        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
+        </li>
+        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
           <File size={18} className="sm:w-4 sm:h-4"/>
           <Link href="/resume.pdf" target="_blank" className="hidden sm:inline">resume</Link>
         </li>
