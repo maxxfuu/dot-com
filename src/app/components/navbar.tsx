@@ -14,20 +14,16 @@ export default function Navbar() {
       {/* Right Nav */}
       <ul className="flex px-4 space-x-4 sm:space-x-6">
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
-          <SquareMousePointer size={18} className="sm:w-4 sm:h-4" href="/"/>
-          <Link href="/" className="hidden sm:inline">home</Link>
-        </li>
-        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
-          <Sparkles size={18} className="sm:w-4 sm:h-4" href="/gems"/>
-          <Link href="/gems" className="hidden sm:inline">gems</Link>
+          <Link href="/" className="hidden sm:inline-flex gap-2 items-center"><SquareMousePointer size={18} className="sm:w-4 sm:h-4"/>home</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
-          <PenLine size={18} className="sm:w-4 sm:h-4" href="/writing"/>
-          <Link href="/writing" className="hidden sm:inline">writing</Link>
+          <Link href="/gems" className="hidden sm:inline-flex gap-2 items-center"><Sparkles size={18} className="sm:w-4 sm:h-4"/>gems</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
-          <File size={18} className="sm:w-4 sm:h-4" href="/resume.pdf"/>
-          <a href="/resume.pdf" target="_blank" className="hidden sm:inline">resume</a>
+          <Link href="/writing" className="hidden sm:inline-flex gap-2 items-center"><PenLine size={18} className="sm:w-4 sm:h-4"/>writing</Link>
+        </li>
+        <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
+          <a href="/resume.pdf" target="_blank" className="hidden sm:inline-flex gap-2 items-center"><File size={18} className="sm:w-4 sm:h-4"/>resume</a>
         </li>
       </ul>
     </div>
