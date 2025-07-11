@@ -104,17 +104,17 @@ export default function Projects() {
         { name: "shadcn/ui", component: shadcnIcon },
       ]
     },
-    {
-      id: "project-4",
-      name: "Project 4", 
-      description: "Description of project 4",
-      image: "/project-4.png",
-      link: "https://project-4.com",
-      technologies: [
-        { name: "Next.js", component: NextIcon },
-        { name: "Rust", component: RustIcon },
-      ]
-    }
+    // {
+    //   id: "project-4",
+    //   name: "Project 4", 
+    //   description: "Description of project 4",
+    //   image: "/project-4.png",
+    //   link: "https://project-4.com",
+    //   technologies: [
+    //     { name: "Next.js", component: NextIcon },
+    //     { name: "Rust", component: RustIcon },
+    //   ]
+    // }
   ]
 
   return (
