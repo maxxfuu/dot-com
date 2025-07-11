@@ -7,15 +7,15 @@ const blogs = [
     tags: ["tag1", "tag2", "tag3"],
     description: "chat are we cooked?",
     date: "0000-00-00",
-    link: "/"
-  },
-  {
-    title: "Cellular Automata",
-    tags: ["tag1", "tag2", "tag3"],
-    description: "what the heck is a cellular automata?",
-    date: "0000-00-00",
-    link: "/"
+    link: "/writing/reflections-on-cs.tsx"
   }
+  // {
+  //   title: "Cellular Automata",
+  //   tags: ["tag1", "tag2", "tag3"],
+  //   description: "what the heck is a cellular automata?",
+  //   date: "0000-00-00",
+  //   link: "/"
+  // }
 ]
 
 export default function Writing() {
