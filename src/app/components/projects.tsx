@@ -95,7 +95,7 @@ export default function Projects() {
       name: "Machyna Inc.", 
       type: "Web App",
       description: "Landing page for Machyna Inc.",
-      image: "/machyna_site.png",
+      image: "/machyna_site.webp",
       link: "https://machyna.com",
       technologies: [
         { name: "Next.js", component: NextIcon },
