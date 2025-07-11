@@ -1,6 +1,5 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { MagicCard } from "@/components/magicui/magic-card";
 
 const NextIcon = () => (
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="currentColor">
