@@ -89,7 +89,7 @@ export default function Hero() {
           height={400}
           priority={true}
           draggable={false}
-          className="w-48 h-48 sm:w-[250px] sm:h-[250px] object-cover rounded-md border-2 sm:border-4 border-[#151315]"/>
+          className="w-[300px] h-[300px] object-cover rounded-md border-2 sm:border-4 border-[#151315] mt-4"/>
       </div>
     </div>
   );
