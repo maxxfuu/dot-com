@@ -2,25 +2,10 @@
 
 import Link from "next/link";
 import { File, PenLine, Sparkles, SquareMousePointer } from 'lucide-react';
-import { useEffect, useState } from 'react';
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div className={`flex justify-between items-center py-4 text-[#9CA3AF] sticky top-0 z-50 transition-all duration-300 ease-out ${
-      scrolled 
-        ? 'bg-black/90 border-b border-gray-700/30 shadow-lg' 
-        : 'border-b border-[#252525] bg-transparent'
-    }`}>
+    <div className={`flex justify-between items-center py-4 text-[#9CA3AF] sticky top-0 z-50 transition-all duration-300 ease-out bg-black/80 border-b border-gray-700/30 shadow-lg`}>
       {/* Left Nav */}
       <div className="flex items-center px-4 cursor-pointer">
         <Link href="/" className="text-base sm:text-base font-medium">maxxfuu</Link>
