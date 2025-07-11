@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { MagicCard } from "@/components/magicui/magic-card";
 
 const NextIcon = () => (
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="currentColor">
@@ -54,6 +55,13 @@ const cmakeIcon = () => (
   </svg>
 )
 
+const shadcnIcon = () => (
+  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="currentColor">
+    <title>shadcn/ui</title>
+    <path d="M22.219 11.784 11.784 22.219c-.407.407-.407 1.068 0 1.476.407.407 1.068.407 1.476 0L23.695 13.26c.407-.408.407-1.069 0-1.476-.408-.407-1.069-.407-1.476 0ZM20.132.305.305 20.132c-.407.407-.407 1.068 0 1.476.408.407 1.069.407 1.476 0L21.608 1.781c.407-.407.407-1.068 0-1.476-.408-.407-1.069-.407-1.476 0Z"/>
+  </svg>
+)
+
 export default function Projects() {
   const projects = [
     {
@@ -85,13 +93,16 @@ export default function Projects() {
     },
     {
       id: "project-3",
-      name: "Project 3", 
-      description: "Description of project 3",
-      image: "/project-3.png",
-      link: "https://project-3.com",
+      name: "Machyna Inc.", 
+      type: "Web App",
+      description: "Landing page for Machyna Inc.",
+      image: "/machyna_site.png",
+      link: "https://machyna.com",
       technologies: [
-        { name: "React", component: ReactIcon },
+        { name: "Next.js", component: NextIcon },
+        { name: "Tailwind CSS", component: TailwindIcon },
         { name: "TypeScript", component: TypeScriptIcon },
+        { name: "shadcn/ui", component: shadcnIcon },
       ]
     },
     {
@@ -125,51 +136,50 @@ export default function Projects() {
       {/* Responsive grid container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {projects.map((project) => (
-          <a 
-            key={project.id} 
-            href={project.link}
-            className="bg-[#131313] p-3 sm:p-4 rounded-lg hover:bg-[#232323] transition-colors group block"
-          >
-            <div className="flex flex-col space-y-2 sm:space-y-3">
-              <Image
-                priority={true}
-                draggable={false}
-                src={project.image} 
-                alt={project.name} 
-                width={2124} 
-                height={2124} 
-                className="w-full h-50 object-cover rounded-md"
-              />
-              <div className="flex flex-row justify-between items-start">
-                <div className="flex-1">
-                  <h3 className="mb-2 text-sm font-semibold group-hover:text-white transition-colors items-center">
-                    {project.name}
-                    <span className="ml-3 text-xs font-normal tracking-tighter px-2 py-0.5 bg-[#535353] rounded-md">{project.type}</span>
-                  </h3>
-                  <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                {/* Technology logos */}
-                {project.technologies && (
-                  <div className="flex flex-wrap gap-1 ml-2">
-                    {project.technologies.map((tech, index) => {
-                      const IconComponent = tech.component;
-                      return (
-                        <div 
-                          key={index}
-                          className="text-gray-400 group-hover:text-gray-300 transition-colors"
-                          title={tech.name}
-                        >
-                          <IconComponent />
-                        </div>
-                      );
-                    })}
+            <a key={project.id}
+              href={project.link}
+              className="bg-[#131313] p-3 sm:p-4 rounded-lg hover:bg-[#232323] transition-colors group block"
+            >
+              <div className="flex flex-col space-y-2 sm:space-y-3">
+                <Image
+                  priority={true}
+                  draggable={false}
+                  src={project.image} 
+                  alt={project.name} 
+                  width={2124} 
+                  height={2124} 
+                  className="w-full h-50 object-cover rounded-md"
+                />
+                <div className="flex flex-row justify-between items-start">
+                  <div className="flex-1">
+                    <h3 className="mb-2 text-sm font-semibold group-hover:text-white transition-colors items-center">
+                      {project.name}
+                      <span className="ml-3 text-xs font-normal tracking-tighter px-2 py-0.5 bg-[#535353] rounded-md">{project.type}</span>
+                    </h3>
+                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed">
+                      {project.description}
+                    </p>
                   </div>
-                )}
+                  {/* Technology logos */}
+                  {project.technologies && (
+                    <div className="flex flex-wrap gap-1 ml-2">
+                      {project.technologies.map((tech, index) => {
+                        const IconComponent = tech.component;
+                        return (
+                          <div 
+                            key={index}
+                            className="text-gray-400 group-hover:text-gray-300 transition-colors"
+                            title={tech.name}
+                          >
+                            <IconComponent />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
         ))}
       </div>
     </div>
