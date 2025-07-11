@@ -145,8 +145,8 @@ export default function Projects() {
                   draggable={false}
                   src={project.image} 
                   alt={project.name} 
-                  width={2124} 
-                  height={2124} 
+                  width={344} 
+                  height={200} 
                   className="w-full h-50 object-cover rounded-md"
                 />
                 <div className="flex flex-row justify-between items-start">
