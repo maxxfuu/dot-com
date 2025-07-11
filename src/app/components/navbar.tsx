@@ -27,7 +27,7 @@ export default function Navbar() {
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
           <File size={18} className="sm:w-4 sm:h-4"/>
-          <Link href="/resume.pdf" target="_blank" className="hidden sm:inline">resume</Link>
+          <a href="/resume.pdf" target="_blank" className="hidden sm:inline">resume</a>
         </li>
       </ul>
     </div>
