@@ -14,16 +14,16 @@ export default function Navbar() {
       {/* Right Nav */}
       <ul className="flex px-4 space-x-4 sm:space-x-6">
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
-          <Link href="/" className="hidden sm:inline-flex gap-2 items-center"><SquareMousePointer size={18} className="sm:w-4 sm:h-4"/>home</Link>
+          <SquareMousePointer size={18} className="sm:w-4 sm:h-4"/><Link href="/" className="hidden sm:inline-flex gap-2 items-center">home</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
-          <Link href="/gems" className="hidden sm:inline-flex gap-2 items-center"><Sparkles size={18} className="sm:w-4 sm:h-4"/>gems</Link>
+          <Sparkles size={18} className="sm:w-4 sm:h-4"/><Link href="/gems" className="hidden sm:inline-flex gap-2 items-center">gems</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
-          <Link href="/writing" className="hidden sm:inline-flex gap-2 items-center"><PenLine size={18} className="sm:w-4 sm:h-4"/>writing</Link>
+          <PenLine size={18} className="sm:w-4 sm:h-4"/><Link href="/writing" className="hidden sm:inline-flex gap-2 items-center">writing</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1 cursor-pointer">
-          <a href="/resume.pdf" target="_blank" className="hidden sm:inline-flex gap-2 items-center"><File size={18} className="sm:w-4 sm:h-4"/>resume</a>
+          <File size={18} className="sm:w-4 sm:h-4"/><a href="/resume.pdf" target="_blank" className="hidden sm:inline-flex gap-2 items-center">resume</a>
         </li>
       </ul>
     </div>
