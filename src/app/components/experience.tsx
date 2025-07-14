@@ -14,7 +14,7 @@ const experiences = [
     image: "/machyna.png",
     company: "Machyna Inc.",
     position: "Software Engineer Intern",
-    description: "I built an additional feature within AWS cloud infrastructure for the company that enabled a full lifecycle of uploading and managing files within the cloud infrastrucutre. Cloud services that was used includes but not limited to AppSync, S3, Lambda, RDS, and other itermediate AWS services. I was also responsible for building a new landing page for the company using Next.js, Tailwind CSS, and TypeScript.",
+    description: "Built a full-featured file upload and management system leveraging amazon web services such as AppSync, S3, Lambda, RDS, and other supporting services. Additionally, developed a new marketing landing page for the company using Next.js, Tailwind CSS, and TypeScript.",
     date: "Summer 2025"
   },
   {

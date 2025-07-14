@@ -23,7 +23,7 @@ export default function Navbar() {
           <Link href="/writing"><PenLine size={18} className="sm:w-4 sm:h-4"/></Link><Link href="/writing" className="hidden sm:inline-flex gap-2 items-center">writing</Link>
         </li>
         <li className="flex items-center text-sm sm:text-sm gap-2 cursor-pointer hover:text-white transition-colors p-1">
-          <Link href="/resume.pdf" target="_blank"><File size={18} className="sm:w-4 sm:h-4"/></Link><a href="/resume.pdf" target="_blank" className="hidden sm:inline-flex gap-2 items-center">resume</a>
+          <a href="/resume.pdf" target="_blank" className="hidden sm:inline-flex gap-2 items-center"><File size={18} className="sm:w-4 sm:h-4"/>resume</a>
         </li>
       </ul>
     </div>
