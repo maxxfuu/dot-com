@@ -72,7 +72,7 @@ export default function Hero() {
         <p className="text-[#9CA3AF] mb-4 sm:mb-6 text-sm sm:text-base">If you&apos;d like to connect, feel free to reach out!</p>
         <div className="flex flex-row gap-4 sm:gap-6 justify-start">
           {socials.map((social) => (
-             <a href={social.url} key={social.name} className="text-gray-400 hover:text-white transition-colors p-1">
+             <a href={social.url} key={social.name} className="text-gray-400 hover:text-white transition-colors p-1" target="_blank">
                <div className="w-5 h-5 sm:w-6 sm:h-6">
                  {social.icon}
                </div>
