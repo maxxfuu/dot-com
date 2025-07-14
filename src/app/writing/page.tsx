@@ -3,11 +3,10 @@ import { MagicCard } from "@/components/magicui/magic-card";
 
 const blogs = [
   {
-    title: "Reflections on two years of CS",
-    tags: ["tag1", "tag2", "tag3"],
-    description: "chat are we cooked?",
-    date: "0000-00-00",
-    link: "/writing/reflections-on-cs.tsx"
+    title: "On becoming an effective engineer",
+    description: "a reflection on my growth as an engineer within my first internship",
+    date: "07-13-2025",
+    link: "/writing/on-becoming-an-effective-engineer.tsx"
   }
   // {
   //   title: "Cellular Automata",
