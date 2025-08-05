@@ -9,6 +9,14 @@ import {
 import Image from "next/image";
 
 const experiences = [
+  // {
+  //   id: "item-0",
+  //   image: "/machyna.png",
+  //   company: "Machyna Inc.",
+  //   position: "Software Development Engineer",
+  //   description: "Incoming Full-Time Software Development Engineer at Machyna Inc.",
+  //   date: "Fall 2026"
+  // },
   {
     id: "item-1",
     image: "/machyna.png",
