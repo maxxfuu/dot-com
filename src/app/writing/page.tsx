@@ -3,10 +3,10 @@ import { MagicCard } from "@/components/magicui/magic-card";
 
 const blogs = [
   {
-    title: "On becoming an effective engineer",
-    description: "a reflection on my growth as an engineer within my first internship",
-    date: "07-13-2025",
-    link: "/writing/on-becoming-an-effective-engineer.tsx"
+    title: "To be a generalist or a specialist",
+    description: "A thought experiment on the trade-off between being a generalist or a specialist and why I think being a generalist is the better choice.",
+    date: "08-06-2025",
+    link: "/writing/blog1.tsx"
   }
   // {
   //   title: "Cellular Automata",
@@ -31,8 +31,8 @@ export default function Writing() {
           <a key={blog.title} href={blog.link} >
             <MagicCard className="bg-[#131313] p-3 sm:p-4 rounded-lg hover:bg-[#232323] transition-colors group block cursor-pointer">
 
-            <div className="flex flex-col space-y-2 sm:space-y-3 hover:underline hover:underline-offset-4 hover:decoration-gray-400">
-              <h2 className="text-sm font-semibold group-hover:text-white transition-colors items-center">{blog.title}</h2>
+            <div className="flex flex-col space-y-2 sm:space-y-3 ">
+              <h2 className="text-sm font-semibold group-hover:text-white group-hover:underline group-hover:underline-offset-4 group-hover:decoration-gray-400 transition-colors items-center">{blog.title}</h2>
               <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed">{blog.description}</p>
               <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed">{blog.date}</p>
             </div>
